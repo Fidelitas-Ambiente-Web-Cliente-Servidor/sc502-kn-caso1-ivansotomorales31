@@ -26,3 +26,74 @@ body {
   background-color: var(--color-fondo);
   color: var(--color-texto);
 }
+
+.encabezado {
+  background-color: var(--color-primario);
+  color: var(--color-claro);
+}
+
+h1,
+h2 {
+  font-family: var(--fuente-titulo);
+}
+
+.boton-filtro,
+.boton-reserva {
+  background-color: var(--color-secundario);
+  color: var(--color-claro);
+  border: none;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boton-filtro.activo {
+  background-color: var(--color-primario);
+}
+
+.boton-reserva:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.card-plato {
+  background-color: var(--color-claro);
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-plato h3 {
+  font-family: var(--fuente-titulo);
+  color: var(--color-primario);
+}
+
+.error-campo {
+  color: #b00020;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.fila-reserva {
+  background-color: var(--color-claro);
+}
+
+.fila-vip td {
+  background-color: var(--color-reserva-vip);
+}
+
+.resumen-reservas {
+  background-color: var(--color-claro);
+  border-left: 5px solid var(--color-secundario);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .boton-filtro {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
